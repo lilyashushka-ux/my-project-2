@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Container, Form, FormControl, Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../assets/react.svg";
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
@@ -35,6 +36,14 @@ export default class Header extends Component {
                 </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/blog" component={Blog} />
+                </Switch>
+            </Router>
             </>
         );
     }
