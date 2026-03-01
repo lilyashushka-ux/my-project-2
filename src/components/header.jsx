@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Button, Container, Form, FormControl, Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../assets/react.svg";
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from '../pages/Home.jsx';
+//import About from './pages/About.jsx';
+//import Contact from './pages/Contact.jsx';
+//import Blog from './pages/Blog.jsx';
 
 export default class Header extends Component {
     render() {
@@ -37,12 +41,12 @@ export default class Header extends Component {
                 </Container>
             </Navbar>
             <Router>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/contact" component={Contact} />
-                    <Route exact path="/blog" component={Blog} />
-                </Switch>
+               <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
             </Router>
             </>
         );
