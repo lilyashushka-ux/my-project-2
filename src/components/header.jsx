@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../assets/react.svg";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from '../pages/Home.jsx';
-//import About from './pages/About.jsx';
-//import Contact from './pages/Contact.jsx';
-//import Blog from './pages/Blog.jsx';
+import About from '../pages/About.jsx';
+import Contact from '../pages/Contact.jsx';
+import Blog from '../pages/Blog.jsx';
 
 export default class Header extends Component {
     render() {
