@@ -1,58 +1,58 @@
 import React from "react";
-import { Col, Container, Nav, NavItem, TabContainer, TabContent, TabPane, NavLink, Row } from "react-bootstrap";
-
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class About extends React.Component {
     render() {
         return(
-        <Container>
-          <TabContainer id="left-tabs-example" defaultActiveKey="First">
+        <Container className="mt-3 pt-5">
+          <Tab.Container id="left-tabs-example" defaultActiveKey="First">
             <Row>
           <Col sm={3}>
-          <Nav variant="pills" className="flex-column mt-2">
-          <NavItem>
-            <NavLink eventKey="First">Our Values</NavLink>
-          </NavItem>
-           <NavItem>
-            <NavLink eventKey="Second">Our Champions</NavLink>
-          </NavItem>
-           <NavItem>
-            <NavLink eventKey="Third">Our Puppiies</NavLink>
-          </NavItem>
-           <NavItem>
-            <NavLink eventKey="Fourth">Our Condition</NavLink>
-          </NavItem>
-           <NavItem>
-            <NavLink eventKey="Fifth">Our History</NavLink>
-          </NavItem>
+          <Nav variant="pills" className="flex-column mt-3">
+          <Nav.Item>
+            <Nav.Link eventKey="First">Our Values</Nav.Link>
+          </Nav.Item>
+           <Nav.Item>
+            <Nav.Link eventKey="Second">Our Champions</Nav.Link>
+          </Nav.Item>
+           <Nav.Item>
+            <Nav.Link eventKey="Third">Our Puppiies</Nav.Link>
+          </Nav.Item>
+           <Nav.Item>
+            <Nav.Link eventKey="Fourth">Our Condition</Nav.Link>
+          </Nav.Item>
+           <Nav.Item>
+            <Nav.Link eventKey="Fifth">Our History</Nav.Link>
+          </Nav.Item>
            </Nav>
           </Col>
           <Col sm={9}>
-          <TabContent className="mt-3">
-            <TabPane eventKey="First">
+          <Tab.Content className="mt-3">
+            <Tab.Pane eventKey="First">
           <img src="" alt="" />
-          <p></p>
-            </TabPane>
-              <TabPane eventKey="Second">
+          <p>Values</p>
+            </Tab.Pane>
+              <Tab.Pane eventKey="Second">
           <img src="" alt="" />
-          <p></p>
-            </TabPane>
-              <TabPane eventKey="Third">
+          <p>Champions</p>
+            </Tab.Pane>
+              <Tab.Pane eventKey="Third">
           <img src="" alt="" />
-          <p></p>
-            </TabPane>
-              <TabPane eventKey="Fourth">
+          <p>Puppies</p>
+            </Tab.Pane>
+              <Tab.Pane eventKey="Fourth">
           <img src="" alt="" />
-          <p></p>
-            </TabPane>
-              <TabPane eventKey="Fifth">
+          <p>Condition</p>
+            </Tab.Pane>
+              <Tab.Pane eventKey="Fifth">
           <img src="" alt="" />
-          <p></p>
-            </TabPane>
-          </TabContent>
+          <p>History</p>
+            </Tab.Pane>
+          </Tab.Content>
            </Col>
             </Row>
-          </TabContainer>
+          </Tab.Container>
         </Container>
     )
 }
