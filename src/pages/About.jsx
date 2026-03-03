@@ -8,6 +8,8 @@ import value from "../assets/value-2.jpg";
 import value1 from "../assets/value-3.jpg";
 import value2 from "../assets/value-4.jpg";
 import value3 from "../assets/value-5.jpg";
+import checkIcon  from "../assets/dog.icon.svg";
+
 
 export default class About extends React.Component {
     render() {
@@ -82,42 +84,119 @@ export default class About extends React.Component {
     </Col>
        </Row>
 </Container>
-          
-          
             </Tab.Pane>
-              <Tab.Pane eventKey="Second">
-        
-          <p>Champions</p>
+            <Tab.Pane eventKey="Second">
+      
+          <p>Our Champions</p>
             </Tab.Pane>
-              <Tab.Pane eventKey="Third">
-                <div className="d-flex justify-content-center gap-4 flex-wrap">
-          <img src={puppy} alt="Puppy" width={500} height={300} />
-          <img src={puppy2} alt="Puppy" width={500} height={300} />
-          <img src={puppy3} alt="Puppy" width={500} height={300} />
-          </div>
-          <div className="mt-5">
-          <h2>Our Border Collie Puppies</h2>
-          <p>Our Border Collie puppies are a perfect combination of excellent bloodlines, balanced temperament, and deep devotion to people. We carefully select our breeding pairs to ensure that every puppy inherits the very best qualities of the breed: intelligence, endurance, obedience, and energy.</p>
-<p>Border Collies are known as one of the most intelligent dog breeds in the world. They learn quickly, enjoy training, and thrive in active families. They are perfect companions for sports, agility, herding, or simply for those who love an energetic and loyal friend.</p>
-<ul>
-  <h6>All of our puppies</h6>
-  <li>Receive regular veterinary check-ups</li>
-  <li>Are vaccinated according to their age</li>
-  <li>Are raised in a loving, family environment</li>
-  <li>Begin early socialization from the first weeks of life</li>
-</ul>
-<p>We place special attention on proper social development. Our puppies grow up surrounded by everyday household sounds, human interaction, and positive experiences, helping them become confident and well-balanced dogs.</p>
-<p>Before going to their new homes, each puppy comes with the necessary documents and detailed care recommendations. We are always happy to stay in touch with new owners and support you throughout your puppy’s growth.</p>
-<p>Choosing a puppy from our kennel means gaining not just a dog, but a loyal companion for many wonderful years.</p>
-</div>
+  <Tab.Pane eventKey="Third">
+<Container className="mt-5">
+  <Row className="g-4">
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+          <Col md={5}>
+            <Card.Img
+              src={puppy}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+          <Col md={7}>
+            <Card.Body>
+              <Card.Title>Our Border Collie Puppies</Card.Title>
+              <Card.Text>  
+          Our Border Collie puppies are a perfect combination of excellent bloodlines, balanced temperament, and deep devotion to people. We carefully select our breeding pairs to ensure that every puppy inherits the very best qualities of the breed: intelligence, endurance, obedience, and energy.
+              </Card.Text>
+            </Card.Body>
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+           <Col md={5}>
+            <Card.Body>
+              <Card.Title>All of our puppies</Card.Title>
+              <Card.Text>
+                 <ul className="custom-list list-unstyled">
+      <li>
+        <img src={checkIcon} alt="check" className="list-icon" width={17} height={17}/>
+        <span>Receive regular veterinary check-ups</span>
+      </li>
+      <li>
+        <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
+        <span>Are vaccinated according to their age</span>
+      </li>
+      <li>
+        <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
+        <span>Are raised in a loving, family environment</span>
+      </li>
+      <li>
+        <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
+        <span>Begin early socialization from the first weeks of life</span>
+      </li>
+    </ul>
+              </Card.Text>
+            </Card.Body>
+          </Col>
+            <Col md={7}>
+            <Card.Img
+              src={puppy2}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+          <Col md={5}>
+            <Card.Img
+              src={puppy3}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+          <Col md={7}>
+            <Card.Body>
+              <Card.Title>Socialization</Card.Title>
+              <Card.Text>
+                We place special attention on proper social development. Our puppies grow up surrounded by everyday household sounds, human interaction, and positive experiences, helping them become confident and well-balanced dogs.
+              </Card.Text>
+            </Card.Body>
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+
+  </Row>
+</Container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
             </Tab.Pane>
               <Tab.Pane eventKey="Fourth">
           
-          <p>Condition</p>
+          <p>Our Condition</p>
             </Tab.Pane>
-              <Tab.Pane eventKey="Fifth">
+               <Tab.Pane eventKey="Fifth">
           
-          <p>History</p>
+          <p>Our History</p>
             </Tab.Pane>
           </Tab.Content>
            </Col>
