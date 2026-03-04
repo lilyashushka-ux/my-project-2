@@ -9,6 +9,9 @@ import value1 from "../assets/value-3.jpg";
 import value2 from "../assets/value-4.jpg";
 import value3 from "../assets/value-5.jpg";
 import checkIcon  from "../assets/dog.icon.svg";
+import champ1 from "../assets/champ-1.jpg";
+import champ2 from "../assets/champ-2.jpg";
+import champ3 from "../assets/champ-3.jpg";
 
 
 export default class About extends React.Component {
@@ -41,7 +44,6 @@ export default class About extends React.Component {
             <Tab.Pane eventKey="First">
               <Container className="mt-4">
   <Row className="g-4">
-
     <Col md={6}>
       <Card>
         <Card.Img variant="top" src={value} width={500} height={300} />
@@ -86,11 +88,73 @@ export default class About extends React.Component {
 </Container>
             </Tab.Pane>
             <Tab.Pane eventKey="Second">
-      
-          <p>Our Champions</p>
+               <Container className="mt-5">
+  <Row className="g-4">
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+          <Col md={5}>
+            <Card.Img
+              src={champ1}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+          <Col md={7}>
+            <Card.Body>
+              <Card.Title>Dog Shows & Our Champions</Card.Title>
+              <Card.Text>  
+        Our dogs regularly participate in national and international dog shows and competitions. For us, titles are not just awards — they are confirmation of responsible breeding, professional training, and genuine love for every dog.
+              </Card.Text>
+            </Card.Body>
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+           <Col md={5}>
+            <Card.Body>
+              <Card.Title>We are proud</Card.Title>
+              <Card.Text>
+               of our champions who have received high evaluations from judges and earned titles such as Best Junior, Best of Breed, and Champion. Every victory is the result of dedication, proper socialization, and quality care from the very first days of life.
+              </Card.Text>
+            </Card.Body>
+          </Col>
+            <Col md={7}>
+            <Card.Img
+              src={champ2}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+    <Col xs={12}>
+      <Card className="shadow-sm">
+        <Row className="g-0 align-items-center">
+          <Col md={5}>
+            <Card.Img
+              src={champ3}
+              style={{ height: "100%", objectFit: "cover" }}
+            />
+          </Col>
+          <Col md={7}>
+            <Card.Body>
+              <Card.Title>Our dogs stand</Card.Title>
+              <Card.Text>
+              out not only for their excellent conformation but also for their stable temperament, obedience, and strong working abilities. We continuously strive to maintain high breed standards and достойно represent them in the show ring.s.
+              </Card.Text>
+            </Card.Body>
+          </Col>
+        </Row>
+      </Card>
+    </Col>
+  </Row>
+</Container>
             </Tab.Pane>
   <Tab.Pane eventKey="Third">
-<Container className="mt-5">
+ <Container className="mt-5">
   <Row className="g-4">
     <Col xs={12}>
       <Card className="shadow-sm">
@@ -119,20 +183,20 @@ export default class About extends React.Component {
             <Card.Body>
               <Card.Title>All of our puppies</Card.Title>
               <Card.Text>
-                 <ul className="custom-list list-unstyled">
-      <li>
+                 <ul className="custom-list list-unstyled ps-0">
+      <li className="d-flex align-items-center gap-2 mt-2">
         <img src={checkIcon} alt="check" className="list-icon" width={17} height={17}/>
         <span>Receive regular veterinary check-ups</span>
       </li>
-      <li>
+      <li className="d-flex align-items-center gap-2 mt-2">
         <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
         <span>Are vaccinated according to their age</span>
       </li>
-      <li>
+      <li className="d-flex align-items-center gap-2 mt-2">
         <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
         <span>Are raised in a loving, family environment</span>
       </li>
-      <li>
+      <li className="d-flex align-items-center gap-2 mt-2">
         <img src={checkIcon} alt="check" className="list-icon" width={17} height={17} />
         <span>Begin early socialization from the first weeks of life</span>
       </li>
