@@ -43,3 +43,19 @@ body {
   color: #888;
 }
 */
+.my-pills .nav-link {
+  background-color: #f8f9fa;
+  color: #333;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.my-pills .nav-link.active {
+  background-color: rgb(33, 37, 41) !important;
+  color: #fff;
+}
+
+.my-pills .nav-link:hover {
+  background-color: rgb(33, 37, 41) !important;
+  color: #fff;
+}

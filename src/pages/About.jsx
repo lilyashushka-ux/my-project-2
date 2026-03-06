@@ -21,7 +21,7 @@ export default class About extends React.Component {
           <Tab.Container id="left-tabs-example" defaultActiveKey="First">
             <Row>
           <Col sm={3}>
-          <Nav variant="pills" className="flex-column mt-3">
+          <Nav variant="pills" className="flex-column mt-3 my-pills">
           <Nav.Item>
             <Nav.Link eventKey="First">Our Values</Nav.Link>
           </Nav.Item>
@@ -29,7 +29,7 @@ export default class About extends React.Component {
             <Nav.Link eventKey="Second">Our Champions</Nav.Link>
           </Nav.Item>
            <Nav.Item>
-            <Nav.Link eventKey="Third">Our Puppiies</Nav.Link>
+            <Nav.Link eventKey="Third">Our Puppies</Nav.Link>
           </Nav.Item>
            <Nav.Item>
             <Nav.Link eventKey="Fourth">Our Condition</Nav.Link>
