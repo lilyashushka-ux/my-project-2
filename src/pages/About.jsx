@@ -34,9 +34,6 @@ export default class About extends React.Component {
            <Nav.Item>
             <Nav.Link eventKey="Fourth">Our Condition</Nav.Link>
           </Nav.Item>
-           <Nav.Item>
-            <Nav.Link eventKey="Fifth">Our History</Nav.Link>
-          </Nav.Item>
            </Nav>
           </Col>
           <Col sm={9}>
@@ -330,12 +327,6 @@ export default class About extends React.Component {
     </Card.Body>
                   </Card>
                 </Container>
-          
-         
-            </Tab.Pane>
-               <Tab.Pane eventKey="Fifth">
-          
-          <p>Our History</p>
             </Tab.Pane>
           </Tab.Content>
            </Col>

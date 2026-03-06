@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Form, FormControl, Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from "../assets/react.svg";
+import Logo from "../assets/dog.icon.svg";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from '../pages/Home.jsx';
 import About from '../pages/About.jsx';
