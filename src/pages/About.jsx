@@ -114,7 +114,7 @@ export default class About extends React.Component {
     <Col xs={12}>
       <Card className="shadow-sm">
         <Row className="g-0 align-items-center">
-           <Col md={5}>
+           <Col md={5} className="order-2 order-md-1">
             <Card.Body>
               <Card.Title>We are proud</Card.Title>
               <Card.Text>
@@ -122,7 +122,7 @@ export default class About extends React.Component {
               </Card.Text>
             </Card.Body>
           </Col>
-            <Col md={7}>
+            <Col md={7} className="order-1 order-md-2">
             <Card.Img
               src={champ2}
               style={{ height: "100%", objectFit: "cover" }}
@@ -180,10 +180,9 @@ export default class About extends React.Component {
     <Col xs={12}>
       <Card className="shadow-sm">
         <Row className="g-0 align-items-center">
-           <Col md={5}>
+           <Col md={5} className="order-2 order-md-1">
             <Card.Body>
               <Card.Title>All of our puppies</Card.Title>
-             
                  <ul className="custom-list list-unstyled ps-0">
       <li className="d-flex align-items-center gap-2 mt-2">
         <img src={checkIcon} alt="check" className="list-icon" width={17} height={17}/>
@@ -204,7 +203,7 @@ export default class About extends React.Component {
     </ul>
       </Card.Body>
           </Col>
-            <Col md={7}>
+            <Col md={7} className="order-1 order-md-2">
             <Card.Img
               src={puppy2}
               style={{ height: "100%", objectFit: "cover" }}
