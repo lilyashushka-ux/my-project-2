@@ -1,6 +1,6 @@
 import React from "react";
 import CarouselBox from "../components/CarouselBox.jsx";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 export default class Home extends React.Component {
     render() {
