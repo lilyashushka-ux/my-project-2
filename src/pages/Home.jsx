@@ -46,7 +46,7 @@ Choosing our kennel means choosing quality, dedication, and a lifelong connectio
   style={{
     border: "0", alignItems: "center", justifyContent: "center", display: "flex", margin: "0 auto"
   }}
-  width="800"
+  width="100%"
 />
 </div>
     </Container>
