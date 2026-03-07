@@ -34,6 +34,22 @@ Choosing our kennel means choosing quality, dedication, and a lifelong connectio
         </Card.Body>
       </Card>
     </Container>
+    <h2 className="text-center mb-4">Find us</h2>
+    <Container>
+ <div className="map mb-5">
+ <iframe
+  allowFullScreen
+  height="450"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42201.280540439926!2d22.298623999999997!3d48.6178816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1772909487149!5m2!1sru!2sua"
+  style={{
+    border: "0", alignItems: "center", justifyContent: "center", display: "flex", margin: "0 auto"
+  }}
+  width="800"
+/>
+</div>
+    </Container>
            </>
         )
     }

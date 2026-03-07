@@ -96,5 +96,7 @@ body {
   margin-left: -100px;
   z-index: 5;
 }
-
+.map iframe {
+  border-radius: 12px;
+}
 
