@@ -59,3 +59,42 @@ body {
   background-color: rgb(33, 37, 41) !important;
   color: #fff;
 }
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.card-left{
+  height: min-content;
+  width: 700px;
+  z-index: 1;
+   background-color: rgb(33, 37, 41) !important;
+}
+.card-text-left{
+  color: white !important;
+}
+.card {
+  background-color: white; /* або інший фон */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+   position: relative; 
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05); /* піднімаємо та трохи збільшуємо */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  z-index: 10; /* сильніша тінь при наведенні */
+}
+
+.card-right{
+  height: min-content;
+  width: 600px;
+  margin-left: -100px;
+  z-index: 5;
+}
+
+
