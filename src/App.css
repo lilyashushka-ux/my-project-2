@@ -100,3 +100,17 @@ body {
   border-radius: 12px;
 }
 
+@media (max-width: 992px){
+
+  .cards-wrapper{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-left,
+  .card-right{
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
