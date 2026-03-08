@@ -1,6 +1,8 @@
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Tab, Nav, Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useLocation, useNavigate } from "react-router-dom";
 import puppy from "../assets/puppy.jpg";
 import puppy2 from "../assets/puppy-2.jpg";
 import puppy3 from "../assets/puppy-3.jpg";
@@ -14,31 +16,47 @@ import champ2 from "../assets/champ-2.jpg";
 import champ3 from "../assets/champ-3.jpg";
 
 
-export default class About extends React.Component {
-    render() {
+export default function About() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // отримуємо хеш з URL
+  const hash = location.hash.replace("#", "");
+  const [activeTab, setActiveTab] = useState(hash || "first");
+
+  useEffect(() => {
+    setActiveTab(hash || "first");
+  }, [hash]);
+
+  const handleTabSelect = (tabKey) => {
+    setActiveTab(tabKey);
+    navigate(`#${tabKey}`); 
+  };
         return(
         <Container className="mt-3 pt-5">
-          <Tab.Container id="left-tabs-example" defaultActiveKey="First">
+          <div className="mb-4 d-flex justify-content-start">
+          </div>
+          <Tab.Container id="left-tabs-example" activeKey={activeTab} onSelect={handleTabSelect}>
             <Row>
           <Col sm={3}>
           <Nav variant="pills" className="flex-column mt-3 my-pills">
           <Nav.Item>
-            <Nav.Link eventKey="First">Our Values</Nav.Link>
+            <Nav.Link eventKey="first">Our Values</Nav.Link>
           </Nav.Item>
            <Nav.Item>
-            <Nav.Link eventKey="Second">Our Champions</Nav.Link>
+            <Nav.Link eventKey="second">Our Champions</Nav.Link>
           </Nav.Item>
            <Nav.Item>
-            <Nav.Link eventKey="Third">Our Puppies</Nav.Link>
+            <Nav.Link eventKey="third">Our Puppies</Nav.Link>
           </Nav.Item>
            <Nav.Item>
-            <Nav.Link eventKey="Fourth">Our Condition</Nav.Link>
+            <Nav.Link eventKey="fourth">Our Condition</Nav.Link>
           </Nav.Item>
            </Nav>
           </Col>
           <Col sm={9}>
           <Tab.Content className="mt-3">
-            <Tab.Pane eventKey="First">
+            <Tab.Pane eventKey="first">
               <Container className="mt-4">
   <Row className="g-4">
     <Col md={6}>
@@ -88,7 +106,7 @@ export default class About extends React.Component {
        </Row>
 </Container>
             </Tab.Pane>
-            <Tab.Pane eventKey="Second">
+            <Tab.Pane eventKey="second">
                <Container className="mt-5">
   <Row className="g-4">
     <Col xs={12}>
@@ -154,7 +172,7 @@ export default class About extends React.Component {
   </Row>
 </Container>
             </Tab.Pane>
-  <Tab.Pane eventKey="Third">
+  <Tab.Pane eventKey="third">
  <Container className="mt-5">
   <Row className="g-4">
     <Col xs={12}>
@@ -235,7 +253,7 @@ export default class About extends React.Component {
   </Row>
 </Container>    
             </Tab.Pane>
-              <Tab.Pane eventKey="Fourth">
+              <Tab.Pane eventKey="fourth">
                 <Container>
                   <Card>
                     <Card.Body>
@@ -333,5 +351,4 @@ export default class About extends React.Component {
           </Tab.Container>
         </Container>
     )
-}
 }

@@ -1,17 +1,18 @@
-/*import { useState } from "react";
+import { useState } from "react";
+import { Button, InputGroup, FormControl } from "react-bootstrap";
 
 function Search({ onSelectTab }) {
   const [query, setQuery] = useState("");
 
   const data = [
-    { title: "Our Values", tabKey: "First" },
-    { title: "Our Champions", tabKey: "Second" },
-    { title: "Our Puppies", tabKey: "Third" },
-    { title: "Our Condition", tabKey: "Fourth" }
+    { title: "Our Values", tabKey: "first" },
+    { title: "Our Champions", tabKey: "second" },
+    { title: "Our Puppies", tabKey: "third" },
+    { title: "Our Condition", tabKey: "fourth" }
   ];
 
   const filtered = data.filter(item =>
-    item.title && item.title.toLowerCase().includes(query.toLowerCase())
+    item.title.toLowerCase().includes(query.toLowerCase())
   );
 
   const handleClick = (tabKey) => {
@@ -19,37 +20,59 @@ function Search({ onSelectTab }) {
     setQuery("");
   };
 
+  const handleSearchButton = () => {
+    if (filtered.length > 0) {
+      handleClick(filtered[0].tabKey); // вибирає перший результат
+    }
+  };
+
   return (
     <div style={{ position: "relative", width: "250px" }}>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{ width: "100%", padding: "5px" }}
-      />
-      {query && filtered.length > 0 && (
+      <InputGroup>
+        <FormControl
+          placeholder="Search..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          style={{ borderRadius: "10px 0 0 10px" }}
+        />
+        <Button
+          variant="outline-light"
+          style={{ borderRadius: "0 10px 10px 0" }}
+          onClick={handleSearchButton}
+        >
+          Search
+        </Button>
+      </InputGroup>
+
+      {query && (
         <div style={{
           position: "absolute",
-          top: "30px",
+          top: "38px",
           width: "100%",
           background: "#fff",
           border: "1px solid #ccc",
+          borderRadius: "0 0 10px 10px",
           zIndex: 1000
         }}>
-          {filtered.map(item => (
-            <div
-              key={item.tabKey}
-              style={{ padding: "5px", cursor: "pointer" }}
-              onClick={() => handleClick(item.tabKey)}
-            >
-              {item.title}
+          {filtered.length > 0 ? (
+            filtered.map(item => (
+              <div
+                key={item.tabKey}
+                style={{ padding: "5px", cursor: "pointer" }}
+                onClick={() => handleClick(item.tabKey)}
+              >
+                {item.title}
+              </div>
+            ))
+          ) : (
+            <div style={{ padding: "5px", color: "gray" }}>
+              Nothing found
             </div>
-          ))}
+          )}
         </div>
       )}
     </div>
   );
 }
 
-export default Search;*/
+export default Search;
