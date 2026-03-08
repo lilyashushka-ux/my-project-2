@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
     render() {
         return(
             <>
-         <footer className="bg-dark text-light pt-4 pb-3 mt-5">
+         <footer className="bg-dark text-light pt-4 pb-3 mt-5 px-4">
       <div className="container-fluid">
   <div className="row align-items-start">
 
