@@ -16,10 +16,6 @@ export default class CaruselBox extends React.Component {
                 src={Dog1}
                 alt="Dog1"
                 />
-                <Carousel.Caption>
-                <h3>Dog 1</h3>
-                <p>First dog in the carousel</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -27,10 +23,6 @@ export default class CaruselBox extends React.Component {
                 src={Dog2}
                 alt="Dog2"
                 />
-                 <Carousel.Caption>
-                <h3>Dog 1</h3>
-                <p>First dog in the carousel</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -38,10 +30,6 @@ export default class CaruselBox extends React.Component {
                 src={Dog3}
                 alt="Dog3"
                 />
-                 <Carousel.Caption>
-                <h3>Dog 1</h3>
-                <p>First dog in the carousel</p>
-                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -49,10 +37,6 @@ export default class CaruselBox extends React.Component {
                 src={Dog4}
                 alt="Dog4"
                 />
-                 <Carousel.Caption>
-                <h3>Dog 1</h3>
-                <p>First dog in the carousel</p>
-                </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         )
