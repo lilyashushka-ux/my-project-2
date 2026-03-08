@@ -76,7 +76,7 @@ body {
   color: white !important;
 }
 .card {
-  background-color: white; /* або інший фон */
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -85,9 +85,9 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.05); /* піднімаємо та трохи збільшуємо */
+  transform: translateY(-10px) scale(1.05);
   box-shadow: 0 12px 20px rgba(0,0,0,0.2);
-  z-index: 10; /* сильніша тінь при наведенні */
+  z-index: 10; 
 }
 
 .card-right{

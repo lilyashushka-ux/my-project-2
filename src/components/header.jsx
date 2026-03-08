@@ -32,7 +32,7 @@ export default class Header extends Component {
                 </Nav>
                 <Form className="d-flex align-items-center ms-3">
                 <FormControl type="text" placeholder="Search" className="me-sm-2" />
-                <Button className='my-button' variant="outline-info">Search</Button>
+                <Button variant="outline-light">Search</Button>
                 </Form>
                 </div>
                 </Navbar.Collapse>
